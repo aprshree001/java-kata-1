@@ -87,7 +87,8 @@ public class LibraryService {
 		documents.addAll(bookDataStore.getBooks());
 		documents.addAll(magzindeDataStore.getMagzine());
 
-		return Collections.sort(documents, (e1, e2) -> e1.getTitle().compareTo(e2.getTitle()));
+		 Collections.sort(documents, (e1, e2) -> e1.getTitle().compareTo(e2.getTitle()));
+		 return documents;
 
 	}
 
