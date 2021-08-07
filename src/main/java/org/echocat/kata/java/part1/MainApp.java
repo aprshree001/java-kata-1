@@ -1,13 +1,14 @@
 package org.echocat.kata.java.part1;
 
+import org.echocat.kata.java.service.LibraryService;
+
 public class MainApp {
 
-    public static void main(String[] args) {
-        System.out.println(getHelloWorldText());
-    }
+	public static void main(String[] args) {
 
-    protected static String getHelloWorldText() {
-        return "Hello world!";
-    }
+		LibraryService libraryService = new LibraryService();
+
+		libraryService.printAllBooksAndMaginzed();
+	}
 
 }
