@@ -19,4 +19,9 @@ public class Book extends Document {
 		setDescription(description);
 	}
 
+	@Override
+	public String toString() {
+		return "Book [description=" + description + ", isbn=" + isbn + "]";
+	}
+
 }

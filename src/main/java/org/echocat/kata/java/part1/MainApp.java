@@ -9,6 +9,10 @@ public class MainApp {
 		LibraryService libraryService = new LibraryService();
 
 		libraryService.printAllBooksAndMaginzed();
+		libraryService.findBookAndMagzineByIsbn("5554-5545-4518");
+		libraryService.findBookAndMagzineByAuthorEmail("null-walter@echocat.org");
+
+		libraryService.printAllBookAndMagzineSortedBytitle();
 	}
 
 }
